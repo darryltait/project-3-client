@@ -1,3 +1,4 @@
+import { setToken } from './tokenService';
 
 // declare a variable for URL to our API
 const BASE_URL = 'http://localhost:3001/api/users';
@@ -15,7 +16,7 @@ function signup(user) {
         if(response.ok) return response.json();
         // error handling
         throw new Error('Email already taken');
-    }).then(data => console.log(data))
+    }).then(data => setToken(data.token))
 }
 
 function login(credentials) {
