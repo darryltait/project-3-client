@@ -1,2 +1,22 @@
 {
+<<<<<<< HEAD
+=======
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#32167a",
+        "titleBar.activeBackground": "#200e4f",
+        "titleBar.activeForeground": "#e7e7e7",
+        "activityBar.activeBackground": "#32167a",
+        "activityBar.activeBorder": "#a2421d",
+        "activityBar.foreground": "#e7e7e7",
+        "activityBar.inactiveForeground": "#e7e7e799",
+        "activityBarBadge.background": "#a2421d",
+        "activityBarBadge.foreground": "#e7e7e7",
+        "statusBar.background": "#200e4f",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#32167a",
+        "titleBar.inactiveBackground": "#200e4f99",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#200e4f"
+>>>>>>> dev
 }
