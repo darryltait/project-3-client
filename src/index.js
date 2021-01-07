@@ -4,9 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// import browser router
+import { BrowserRouter as Router } from 'react-router-dom';
+// wrap the app component in browser router
+
+
+
 ReactDOM.render(
   <React.StrictMode>
+  <Router>
     <App />
+  </Router>
+
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
