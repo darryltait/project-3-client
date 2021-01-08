@@ -26,6 +26,8 @@ function Signup(props) {
                  email: '',
                  password: '',
              });
+             // test that user doesnt get added to state without this
+             props.handleSignupOrLogin();
              props.history.push('/dashboard');
              
          } catch (error) {
