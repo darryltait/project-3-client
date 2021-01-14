@@ -1,10 +1,8 @@
+import Country from './Country';
 import styles from './Dashboard.module.css';
 
 function Dashboard(props) {
     return (
-        
-        
-        
         <div className={styles.countryCard}> 
         <h2 className={styles.countryName}>{props.data.name}</h2>
         <h3>Subregion: {props.data.subregion}</h3>
@@ -14,7 +12,10 @@ function Dashboard(props) {
         <div className={styles.countryMap}>
             <img src={props.data.flag}/>
         </div>
+
          </div>
+
+        
          
      
             

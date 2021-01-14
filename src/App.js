@@ -74,6 +74,7 @@ function App(props) {
           } />
         <Route exact path='/dashboard' render={props => 
         userState.user ?
+        
          appState.data.map((data, idx) =>
           <Dashboard key={idx} data={data}/>
           )
