@@ -2,5 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 40px;
+    background-color: rgb(87, 42, 42);
+    color: white;
     
 }

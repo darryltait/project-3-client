@@ -3,8 +3,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 15px;
-    background-color: black;
-    color: white;
+    background-color: rgb(87, 42, 42);
     box-shadow: 3px 3px 5px 3px lightgray;
 
 }
@@ -17,5 +16,17 @@
 .Header > nav > ul li {
     margin-right: 20px;
     font-size: 25px;
+
 }
+
+.Header > nav > ul li a{
+   text-decoration: none;
+   color: white;
+}
+
+.Header > a {
+    text-decoration: none;
+    color: white;
+}
+
 

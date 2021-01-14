@@ -1,7 +1,9 @@
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { getUser, logout } from './services/userService';
+
+import { getCountries } from './services/countries-api';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -34,6 +36,9 @@ function App(props) {
   const [ userState, setUserState ] = useState({
     user: getUser()
   });
+  const [ appState, setAppState ] = useState({
+    data: []
+  });
 
   function handleSignupOrLogin() {
     setUserState({
@@ -48,6 +53,17 @@ function App(props) {
     props.history.push('/');
   }
 
+  async function getAppData() {
+    const data = await getCountries();
+    console.log(data);
+    setAppState({data});
+  }
+
+  useEffect(() => {
+    getAppData();
+    console.log('effect');
+  }, []);
+
   return (
     <div className="App">
      <Header handleLogout={handleLogout} user={userState.user} />
@@ -58,7 +74,9 @@ function App(props) {
           } />
         <Route exact path='/dashboard' render={props => 
         userState.user ?
-          <Dashboard />
+         appState.data.map((data, idx) =>
+          <Dashboard key={idx} data={data}/>
+          )
           :
           <Redirect to='/login' />
           } />
