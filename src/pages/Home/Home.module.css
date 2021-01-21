@@ -1,0 +1,21 @@
+
+.bkgImage {
+    background-image: url('https://unsplash.com/photos/eyfMgGvo9PA');
+}
+
+.HomeBkg {
+    display: flex;
+    flex-grow: 1;
+    background-color: tan;
+}
+
+.HomeBkgImage {
+    background-image: url('./images/map.jpeg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-grow: 1;
+    /* width: 300px;
+    height: 200px; */
+    
+}

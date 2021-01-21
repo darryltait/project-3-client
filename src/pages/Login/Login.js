@@ -34,22 +34,29 @@ function Login(props) {
     }
     return (
         <div className="Page">
-        <h2>LEts log in</h2>
+        <div className="inputBox">
+        <h2>Login</h2>
             <form onSubmit={handleSubmit}>
+            
                 <input 
                 value={formState.email} 
                 onChange={handleChange} 
                 name="email" 
                 type="email" 
+                placeholder="Email Address"
                 />
                 <input 
                 value={formState.password} 
                 onChange={handleChange} 
                 name="password" 
                 type="password" 
+                placeholder="Password"
+
                 />
-                <button>Login</button>
+                <button>Login!</button>
             </form>
+
+        </div>
         </div>
     );
 }

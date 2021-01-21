@@ -36,33 +36,45 @@ function Signup(props) {
     }
     return (
         <div className="Page">
+        <div className="inputBox">
+                <h2>Sign Up</h2>
+
             <form onSubmit={handleSubmit}>
                 <input 
                 value={formState.firstName} 
                 onChange={handleChange} 
                 name="firstName" 
+                placeholder="First Name"
                 type="text" 
                 />
                 <input 
                 value={formState.lastName} 
                 onChange={handleChange} 
                 name="lastName" 
+                placeholder="Last Name"
+
                 type="text" 
                 />
                 <input 
                 value={formState.email} 
                 onChange={handleChange} 
                 name="email" 
+                placeholder="Email"
+
                 type="email" 
                 />
                 <input 
                 value={formState.password} 
                 onChange={handleChange} 
-                name="password" 
+                name="password"
+                placeholder="Password"
+ 
                 type="password" 
                 />
-                <button>Sign Up</button>
+                <button>Sign Up!</button>
             </form>
+
+        </div>
         </div>
     );
 }

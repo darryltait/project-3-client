@@ -64,6 +64,8 @@ function App(props) {
     console.log('effect');
   }, []);
 
+  
+
   return (
     <div className="App">
      <Header handleLogout={handleLogout} user={userState.user} />
@@ -78,6 +80,7 @@ function App(props) {
          appState.data.map((data, idx) =>
           <Dashboard key={idx} data={data}/>
           )
+        
           :
           <Redirect to='/login' />
           } />
