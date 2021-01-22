@@ -10,16 +10,18 @@
 .countryCard {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    /* justify-content: center;  */
     align-items: center;
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 150px;
+    padding-bottom: 10px;
     /* border: 2px solid blue; */
     background-color: rgb(230,230,230) ;
     border-radius: 20px;
     box-shadow: 3px 3px 7px darkslategray;
     margin: 15px;
     color: dimgray;
+    text-align: center;
 }
 
 .countryCard > h2 {
@@ -27,15 +29,15 @@
     margin-bottom: 10px;
 }
 
-.countryCard > h3 {
+/* .countryCard > h3 {
     margin: 5px 0;
-}
+} */
 
-.countryMap {
-    width: 100px;
-    height: 100px;
-    margin-top: 40px;
-    /* border: 1px solid black; */
+.countryFlag {
+    width: 80px;
+    /* height: 80px; */
+    /* margin-top: 10px; */
+    border: 1px solid black;
 
 }
 
@@ -46,10 +48,10 @@ img {
 
 }
 
-.countryName {
+/* .countryName {
     font-size: 30px;
     text-align: center;
-}
+} */
 
 .countryBeen {
     width: 30px;

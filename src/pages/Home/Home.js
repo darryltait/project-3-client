@@ -5,14 +5,20 @@ function Home(props) {
         <div className={styles.HomeBkgImage}> 
 
         {/* <img className={styles.HomeBkgImage}/> */}
-        <h2>Here's  SomeHome Page Stuff </h2>
-        <h3>Some stuff here about travelling </h3>
-        <h3>And some imagery </h3>
-       
+        <div className= "loginSignup">
+        {/* <div className={styles.countryCard}> */}
+        <h4>Here's some info on:</h4>
+        <h2>{props.rand.name}</h2>
 
-
-
+        <h3>Capital: {props.rand.capital}</h3>
+        <h4>Login and Click on the flag of a country </h4>
+         <h4> to find out some info on it</h4>
         
+        
+
+        <h1></h1>
+        </div>
+       
         </div>
     )
 }

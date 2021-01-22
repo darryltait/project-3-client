@@ -17,5 +17,19 @@
     flex-grow: 1;
     /* width: 300px;
     height: 200px; */
-    
 }
+    
+    .countryCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 300px;
+        /* border: 2px solid blue; */
+        background-color: rgba(230,230,230, .5) ;
+        border-radius: 20px;
+        box-shadow: 3px 3px 7px darkslategray;
+        margin: 15px;
+        color: dimgray;
+    }

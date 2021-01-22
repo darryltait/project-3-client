@@ -12,6 +12,7 @@ import Home from './pages/Home/Home';
 import Dashboard from './pages/Dashboard/Dashboard';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
+import DetailPage from './pages/DetailPage/DetailPage';
 
 import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
@@ -64,6 +65,23 @@ function App(props) {
     console.log('effect');
   }, []);
 
+  // function findOne(alpha3Code) {
+  //   return appState.data.find(country => country.name === countryname);
+  //   console.log(countryname);
+  // }
+
+  function findOne(countrycode) {
+    return appState.data.find(code => code.alpha3Code === countrycode);
+    //const card = props.data.name;
+    //console.log(code);
+  }
+
+  function findRandom(data) {
+    const rand =  appState.data[Math.floor(Math.random() * appState.data.length)];
+    console.log(rand);
+    return rand;
+  }
+
   
 
   return (
@@ -72,7 +90,10 @@ function App(props) {
      <main>
       <Switch>
         <Route exact path='/' render={props => 
-          <Home />
+          <Home 
+            // rand = {appState.data[33]}
+            rand = {findRandom(appState.data)}
+          />
           } />
         <Route exact path='/dashboard' render={props => 
         userState.user ?
@@ -90,6 +111,15 @@ function App(props) {
         <Route exact path='/login' render={props => 
           <Login {...props}  handleSignupOrLogin={handleSignupOrLogin}/>
           } />
+
+        <Route exact path='/countries/:alpha3Code' render={props => 
+            <DetailPage {...props}
+                        code={findOne(props.match.params.alpha3Code)}
+
+             />
+          }
+          />
+
       </Switch>
      </main>
      <Footer />

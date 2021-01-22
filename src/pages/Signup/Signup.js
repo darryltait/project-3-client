@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { signup } from '../../services/userService';
 
+import styles from '../Home/Home.module.css';
+
 function Signup(props) {
     const [formState, setFormState] = useState({
         firstName: "",
@@ -35,8 +37,10 @@ function Signup(props) {
          }
     }
     return (
-        <div className="Page">
-        <div className="inputBox">
+        
+        <div className={styles.HomeBkgImage}> 
+        {/* <div className="Page"> */}
+        <div className="loginSignup">
                 <h2>Sign Up</h2>
 
             <form onSubmit={handleSubmit}>
@@ -75,6 +79,7 @@ function Signup(props) {
             </form>
 
         </div>
+        {/* </div> */}
         </div>
     );
 }
