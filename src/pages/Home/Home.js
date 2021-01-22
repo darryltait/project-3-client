@@ -7,10 +7,10 @@ function Home(props) {
         {/* <img className={styles.HomeBkgImage}/> */}
         <div className= "loginSignup">
         {/* <div className={styles.countryCard}> */}
-        <h4>Here's some info on:</h4>
+        <h4>The capital of:</h4>
         <h2>{props.rand.name}</h2>
 
-        <h3>Capital: {props.rand.capital}</h3>
+        <h3>is: {props.rand.capital}</h3>
         <h4>Login and Click on the flag of a country </h4>
          <h4> to find out some info on it</h4>
         

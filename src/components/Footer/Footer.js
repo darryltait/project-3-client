@@ -4,7 +4,7 @@ function Footer(props) {
     return (
 
         <footer className={styles.Footer}>
-            <p>Copyright &copy; {new Date().getFullYear()} Project 3</p>
+            <p>Copyright &copy; {new Date().getFullYear()}  &nbsp;&nbsp;&nbsp; Where in the World</p>
         </footer>
     )
     
