@@ -9,17 +9,20 @@ function Home(props) {
 
         {/* <img className={styles.HomeBkgImage}/> */}
         <div className= "loginSignup">
-        {/* <div className={styles.countryCard}> */}
+        <div className={styles.countryCard}>
         <h4>The capital of:</h4>
         <h2>{props.rand.name}</h2>
 
-        {/* <h3>is: {props.rand.capital}</h3> */}
-        <h4>Login and Click on the flag of a country </h4>
-         <h4> to find out some info on it</h4>
+        <h4>is:</h4>
+        <h2> {props.rand.capital}</h2>
+        <h4><em>Login</em> and <em>Click</em> on the flag </h4>
+        <h4>of a country to find out </h4>
+         <h4>  some info about it</h4>
         
         
 
-        <h1></h1>
+        
+        </div>
         </div>
        
         </div>

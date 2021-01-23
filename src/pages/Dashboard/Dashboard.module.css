@@ -9,6 +9,9 @@
 
 .dashBody {
     /* background-color: green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: rgb(152,147,143);
     flex-grow: 1;
 
@@ -31,7 +34,7 @@
     /* border: 2px solid blue; */
     /* background-color: rgb(152,147,143) ; */
     background-color: rgb(230,230,230) ;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 3px 3px 7px darkslategray;
     margin: 15px;
     color: dimgray;

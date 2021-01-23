@@ -44,7 +44,9 @@ input {
   margin: auto;
   background-color: rgba(255,255,255,.7);
   padding: 20px;
-  border-radius: 15px;
+  border-radius: 15px;    
+  box-shadow: 3px 3px 7px darkslategray;
   min-width: 250px;
+  padding-bottom: 25px;
 }
 

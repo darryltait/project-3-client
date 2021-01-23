@@ -20,15 +20,25 @@
     /* border: 2px solid blue; */
     /* background-color: rgb(152,147,143) ; */
     background-color: rgb(230,230,230) ;
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: 3px 3px 7px darkslategray;
     /* margin-top: 50px; */
     color: dimgray;
     text-align: center;
 }
 
-h4 {
-    margin: 10px auto;
+a:link {
+    text-decoration: none;
+}
+
+
+.detailCard > h2 {
+    /* margin: 5px auto; */
+    color: black;
+}
+
+.detailCard > h4 {
+    margin: 5px auto;
 }
 
 

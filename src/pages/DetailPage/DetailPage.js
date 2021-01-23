@@ -1,10 +1,11 @@
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styles from './DetailPage.module.css';
 
 function DetailPage(props) {
 
     return (
         <div className={styles.detailBody}>
+        <Link to="/dashboard">
         <div className={styles.detailCard}> 
             <h2>{props.country.name}</h2>
             {/* <p>{props.data.alpha3Code}</p> */}
@@ -16,12 +17,8 @@ function DetailPage(props) {
             <h4>Currency: {props.country.currencies[0].name}</h4>
             <img className={styles.detailImage} src={props.country.flag} alt={props.country.name} />
 
-
-
-
-
-
         </div>
+        </Link>
 
         </div>
     )

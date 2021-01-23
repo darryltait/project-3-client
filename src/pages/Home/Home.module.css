@@ -1,8 +1,4 @@
 
-.bkgImage {
-    background-image: url('https://unsplash.com/photos/eyfMgGvo9PA');
-}
-
 .HomeBkg {
     display: flex;
     flex-grow: 1;
@@ -24,12 +20,23 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 300px;
-        height: 300px;
-        /* border: 2px solid blue; */
-        background-color: rgba(230,230,230, .5) ;
-        border-radius: 20px;
-        box-shadow: 3px 3px 7px darkslategray;
-        margin: 15px;
-        color: dimgray;
+        color: darkslategray;
+        /* width: 300px;
+        height: 300px; */
+         /* border: 2px solid blue;  */
+        /* background-color: rgba(230,230,230, .5) ; */
+        /* border-radius: 20px; */
+        /* box-shadow: 3px 3px 7px darkslategray; */
+        /* margin: 15px; */
     }
+
+    .countryCard > h4 {
+        margin-bottom: -15px;
+    }
+    .countryCard > h2 {
+        margin-top: 40px ;
+        color: black;
+    }
+
+
+   
