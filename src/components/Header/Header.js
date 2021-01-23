@@ -4,7 +4,7 @@ function Header(props) {
     return (
         <header className={styles.Header}>
             <Link to="/">
-                <h1>Where in the World?</h1>
+                <h1>Countries of the World</h1>
             </Link>
             <nav>
                 <ul>
@@ -15,7 +15,7 @@ function Header(props) {
                                 <Link to="" onClick={props.handleLogout}>Logout</Link>
                             </li>
                             <li>
-                                <Link to="/dashboard">Dashboard</Link>
+                                <Link to="/dashboard">Countries</Link>
                             </li>
 
                         </>

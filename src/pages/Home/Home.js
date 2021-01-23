@@ -1,3 +1,6 @@
+
+import { Link } from 'react-router-dom';
+
 import styles from './Home.module.css';
 
 function Home(props) {
@@ -10,7 +13,7 @@ function Home(props) {
         <h4>The capital of:</h4>
         <h2>{props.rand.name}</h2>
 
-        <h3>is: {props.rand.capital}</h3>
+        {/* <h3>is: {props.rand.capital}</h3> */}
         <h4>Login and Click on the flag of a country </h4>
          <h4> to find out some info on it</h4>
         

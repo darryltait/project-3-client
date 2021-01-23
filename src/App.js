@@ -78,7 +78,7 @@ function App(props) {
 
   function findRandom(data) {
     const rand =  appState.data[Math.floor(Math.random() * appState.data.length)];
-    console.log(rand);
+    //console.log(rand);
     return rand;
   }
 
@@ -89,12 +89,33 @@ function App(props) {
      <Header handleLogout={handleLogout} user={userState.user} />
      <main>
       <Switch>
-        <Route exact path='/' render={props => 
+        {/* <Route exact path='/' render={props => 
           <Home 
             // rand = {appState.data[33]}
             rand = {findRandom(appState.data)}
           />
-          } />
+          } /> */}
+
+            <Route exact path='/' render={props => {
+                const rand=
+                findRandom(appState.data)
+            if(!rand) {
+              return (
+                <div>
+                  <h1>...loading</h1>
+                </div>
+              )
+            } else {
+              return (
+            <Home 
+                {...props}
+                rand = {rand}
+             />
+            )
+          }
+        } 
+            } />    
+
         <Route exact path='/dashboard' render={props => 
         userState.user ?
         
@@ -112,13 +133,25 @@ function App(props) {
           <Login {...props}  handleSignupOrLogin={handleSignupOrLogin}/>
           } />
 
-        <Route exact path='/countries/:alpha3Code' render={props => 
-            <DetailPage {...props}
-                        code={findOne(props.match.params.alpha3Code)}
-
+        <Route exact path='/countries/:alpha3Code' render={props =>  {
+                const country=
+                findOne(props.match.params.alpha3Code)
+            if(!country) {
+              return (
+                <div>
+                  <h1>...loading</h1>
+                </div>
+              )
+            } else {
+              return (
+            <DetailPage 
+                {...props}
+                country = {country}
              />
+            )
           }
-          />
+        }
+      } />
 
       </Switch>
      </main>
