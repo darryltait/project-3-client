@@ -30,7 +30,7 @@ function Signup(props) {
              });
              // test that user doesnt get added to state without this
              props.handleSignupOrLogin();
-             props.history.push('/dashboard');
+             props.history.push('/countries');
              
          } catch (error) {
              alert(error.message);

@@ -9,7 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
 import Home from './pages/Home/Home';
-import Dashboard from './pages/Dashboard/Dashboard';
+import Countries from './pages/Countries/Countries';
 import Signup from './pages/Signup/Signup';
 import Login from './pages/Login/Login';
 import DetailPage from './pages/DetailPage/DetailPage';
@@ -116,11 +116,11 @@ function App(props) {
         } 
             } />    
 
-        <Route exact path='/dashboard' render={props => 
+        <Route exact path='/countries' render={props => 
         userState.user ?
         
          appState.data.map((data, idx) =>
-          <Dashboard key={idx} data={data}/>
+          <Countries key={idx} data={data}/>
           )
         
           :

@@ -5,7 +5,7 @@ function DetailPage(props) {
 
     return (
         <div className={styles.detailBody}>
-        <Link to="/dashboard">
+        <Link to="/countries">
         <div className={styles.detailCard}> 
             <h2>{props.country.name}</h2>
             {/* <p>{props.data.alpha3Code}</p> */}
