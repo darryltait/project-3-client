@@ -1,9 +1,8 @@
 
 import { Link } from 'react-router-dom';
 
-import Country from './Country';
 import styles from './Countries.module.css';
-import { getCountries } from '../../services/countries-api';
+
 
 
 
