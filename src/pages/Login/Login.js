@@ -38,7 +38,6 @@ function Login(props) {
     return (
         <div className={styles.HomeBkgImage}> 
 
-        {/* <div className="Page"> */}
         <div className="loginSignup">
         <h2>Login</h2>
             <form onSubmit={handleSubmit}>
@@ -62,7 +61,6 @@ function Login(props) {
             </form>
 
         </div>
-        {/* </div> */}
         </div>
     );
 }

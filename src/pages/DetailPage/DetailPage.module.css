@@ -1,6 +1,5 @@
 
 .detailBody {
-    /* background-color: green; */
     display: flex;
     justify-content: center; 
     align-items: center;
@@ -13,16 +12,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
-    /* align-items: center; */
     width: 500px;
     height: 600px;
     padding: 0 10px 5px;
-    /* border: 2px solid blue; */
-    /* background-color: rgb(152,147,143) ; */
     background-color: rgb(230,230,230) ;
     border-radius: 15px;
     box-shadow: 3px 3px 7px darkslategray;
-    /* margin-top: 50px; */
     color: dimgray;
     text-align: center;
 }
@@ -33,7 +28,6 @@ a:link {
 
 
 .detailCard > h2 {
-    /* margin: 5px auto; */
     color: black;
 }
 
@@ -41,26 +35,15 @@ a:link {
     margin: 5px auto;
 }
 
-
-
-/* .countryCard > h3 {
-    margin: 5px 0;
-} */
-
 .detailFlag {
     width: 80px;
-    /* height: 80px; */
-    /* margin-top: 10px; */
-    /* border: 1px solid black; */
 
 }
 
 .detailImage {
     max-width: 60%;
-    /* max-height: 80%; */
     object-fit: contain;
     margin: 0 auto;
     margin-top: 25px;
-   
 
 }

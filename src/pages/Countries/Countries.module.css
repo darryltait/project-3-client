@@ -1,14 +1,5 @@
-/* .countryBody {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-grow: 1;
-    /* min-height: 100vh; */
- /* 
-  } */
 
 .dashBody {
-    /* background-color: green; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,12 +7,6 @@
     flex-grow: 1;
 
 }
-
-/* .flagGroup {
-    margin-top: 80px;
-    background-color: rgb(152,147,143);
-
-} */
 
 .countryCard {
     display: flex;
@@ -31,8 +16,6 @@
     width: 200px;
     height: 150px;
     padding: 0 10px 5px;
-    /* border: 2px solid blue; */
-    /* background-color: rgb(152,147,143) ; */
     background-color: rgb(230,230,230) ;
     border-radius: 15px;
     box-shadow: 3px 3px 7px darkslategray;
@@ -46,29 +29,16 @@
     margin-bottom: 15px;
 }
 
-/* .countryCard > h3 {
-    margin: 5px 0;
-} */
-
 .countryFlag {
     width: 80px;
-    /* height: 80px; */
-    /* margin-top: 10px; */
-    /* border: 1px solid black; */
-
+   
 }
 
 img {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
-
 }
-
-/* .countryName {
-    font-size: 30px;
-    text-align: center;
-} */
 
 
 

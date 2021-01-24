@@ -39,7 +39,6 @@ function Signup(props) {
     return (
         
         <div className={styles.HomeBkgImage}> 
-        {/* <div className="Page"> */}
         <div className="loginSignup">
                 <h2>Sign Up</h2>
 
@@ -79,7 +78,6 @@ function Signup(props) {
             </form>
 
         </div>
-        {/* </div> */}
         </div>
     );
 }

@@ -18,19 +18,6 @@ import {Switch, Route, withRouter, Redirect } from 'react-router-dom';
 
 import './App.css';
 
-// create 2 components inside of components dir
-// Header component and Footer component - these will be in separate folders
-// have them return header or footer element respectively with the text
-// fragment of header or footer
-// export them and then import them into app.js
-// render them in the outer div below
-
-// create 4 page components- login, signup dashboard and home
-// define as function component and export them
-// have them return a div with text content of the name
-// import them into app.js
-// import  switch and route from react router
-// define the routes for the various pages 
 
 function App(props) {
 

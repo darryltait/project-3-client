@@ -1,6 +1,5 @@
 import { setToken, getUserFromToken, removeToken } from './tokenService';
 
-// declare a variable for URL to our API
 // deployment url
 const BASE_URL = 'https://project3-countries.herokuapp.com/api/users'; 
 //development url
@@ -45,7 +44,6 @@ function getUser() {
     return getUserFromToken();
 }
 
-// export our functions
 
 export {
     signup,
