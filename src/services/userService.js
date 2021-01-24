@@ -1,8 +1,10 @@
 import { setToken, getUserFromToken, removeToken } from './tokenService';
 
 // declare a variable for URL to our API
-const BASE_URL = 'https://project3-countries.herokuapp.com/api/users';
-// const BASE_URL = 'http://localhost:3001/api/users'; development url
+// deployment url
+const BASE_URL = 'https://project3-countries.herokuapp.com/api/users'; 
+//development url
+//const BASE_URL = 'http://localhost:3001/api/users'; 
 
 // define functions for making AJAX requests
 
