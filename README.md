@@ -1,8 +1,8 @@
-# Countries of the World
+## Introduction
 
 Countries of the World is an app that shows you some info on a country of your choice.
 
-## Screenshots of app:
+### Screenshots of app:
 
 Main page
 
@@ -20,22 +20,25 @@ Index page
 - Node.js
 - Mongoose
 - MongoDB
-- Auth w/ JWT
+- Authentication w/ JWT
 - GitHub
 - Heroku
 - Netlify
 
 ## Getting Started
 
-Link to site:
-https://friendly-ritchie-f08ab2.netlify.app
-
 Trello planning:
 https://trello.com/b/d81C5IuK/countries
 
-## Next Steps
+Link to site:
+https://project3-countries.netlify.app/
+
+## Unsolved Problems
+
+- Give app more transitional functionality
+
+## Future Enhancements
 
 - Allow users to show that they have visited a country
-- Allow users to show that a country is on their bucket list
-- Make app more transitional
-- Allow users to search for countries by region
+- Allow users to show that a country is on their bucket list to visit
+- Allow users to search for countries by name, region, language spoken
