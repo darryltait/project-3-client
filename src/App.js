@@ -52,21 +52,15 @@ function App(props) {
     console.log('effect');
   }, []);
 
-  // function findOne(alpha3Code) {
-  //   return appState.data.find(country => country.name === countryname);
-  //   console.log(countryname);
-  // }
-
   function findOne(countrycode) {
     return appState.data.find(code => code.alpha3Code === countrycode);
-    //const card = props.data.name;
-    //console.log(code);
+    
   }
 
   function findRandom(data) {
     const rand =  appState.data[Math.floor(Math.random() * appState.data.length)];
-    //console.log(rand);
     return rand;
+
   }
 
   
@@ -76,32 +70,26 @@ function App(props) {
      <Header handleLogout={handleLogout} user={userState.user} />
      <main>
       <Switch>
-        {/* <Route exact path='/' render={props => 
-          <Home 
-            // rand = {appState.data[33]}
-            rand = {findRandom(appState.data)}
-          />
-          } /> */}
 
-            <Route exact path='/' render={props => {
+        <Route exact path='/' render={props => {
                 const rand=
                 findRandom(appState.data)
-            if(!rand) {
-              return (
-                <div>
-                  <h1>...loading</h1>
-                </div>
-              )
-            } else {
-              return (
-            <Home 
-                {...props}
-                rand = {rand}
-             />
-            )
-          }
-        } 
-            } />    
+                if(!rand) {
+                  return (
+                    <div>
+                      <h1>...loading</h1>
+                    </div>
+                  )
+                } else {
+                  return (
+                <Home 
+                    {...props}
+                    rand = {rand}
+                />
+                )
+              }
+            } 
+                } />    
 
         <Route exact path='/countries' render={props => 
         userState.user ?
