@@ -31,7 +31,7 @@ Trello planning:
 https://trello.com/b/d81C5IuK/countries
 
 Link to site:
-https://project3-countries.netlify.app/
+https://countries-ofthe-world.netlify.app/
 
 ## Unsolved Problems
 
